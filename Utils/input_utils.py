@@ -15,3 +15,12 @@ def get_tasks_from_user(is_2d=False):
 
         tasks.append(task)
     return tasks
+
+def get_servers_from_user():
+    servers = []
+    m = int(input("Enter number of servers: "))
+    for i in range(m):
+        print(f"Server {i+1}:")
+        capacity = int(input("  CPU Capacity: "))
+        servers.append({"Server_ID": 200 + i, "CPU_Capacity": capacity})
+    return servers
